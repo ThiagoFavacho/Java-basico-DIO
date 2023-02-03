@@ -1,6 +1,7 @@
+package edu.thiago.operadores;
 public class Operadores1 {
     public static void main(String[] args) {
-       //Operadores aritiméticos
+       //OPERADORES ARITIMÉTICOS
 
         double soma = 10.5 + 15.7;
         int subtracao = 113 - 25;
@@ -17,7 +18,7 @@ public class Operadores1 {
         System.out.println(resultado);
         
         
-        //Concatenação (junção de palavras ou números)
+        //CONCATENAÇÃO (junção de palavras ou números)
         String concatenacao = "?";
 
         concatenacao = 1 + 1 + 1 + "1";
@@ -29,24 +30,5 @@ public class Operadores1 {
         concatenacao = "1" + (1+1+1+1);
         System.out.println(concatenacao);
         
-        
-        
-        
-        
-        
-        //int a, b;
-
-        //a = 6;
-        //b = 6;
-
-        //String resultado = a==b ?"Verdadeiro" : "Falso";
-
-        //if(a==b)
-            //resultado = "verdadeiro";
-        //else
-            //resultado = "falso";
-
-        //System.out.println(resultado);
-
     }
 }
