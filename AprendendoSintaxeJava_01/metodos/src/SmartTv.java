@@ -4,7 +4,7 @@ public class SmartTv {
     int volume = 25;
 
     //Criando método para mudar de canal adicionando um número específico
-    public void mudararCanal(int novoCanal){
+    public void mudarCanal(int novoCanal){
         canal = novoCanal;
     }
     
