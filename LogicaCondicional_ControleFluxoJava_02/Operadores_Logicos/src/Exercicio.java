@@ -28,5 +28,22 @@ public class Exercicio {
 
         System.out.println("((i1 + i2) < (f2 - f1)) && true: " + (((i1 + i2) < (f2 - f1)) && true));
         System.out.println("((i1 > i2) || (f2 < f1)): " + ((i1 > i2) || (f2 < f1)));
+
+        double salarioMensal = 11893.58d;
+        double mediaSalario = 18500d;
+        int quantidadeDependentes = 4;
+        int mediaDependentes = 2;
+
+        System.out.println((salarioMensal < mediaSalario) && (quantidadeDependentes >= mediaDependentes));
+
+        boolean salarioBaixo = salarioMensal < mediaSalario;
+        boolean muitosDependentes = quantidadeDependentes >= mediaDependentes;
+
+        System.out.println((salarioBaixo) && (muitosDependentes));
+
+        //Expressão simplificada para verificar se um usuario tem direito a Auxilio
+        boolean recebeAuxilio = ((salarioBaixo) && (muitosDependentes));
+
+        System.out.println("recebeAuxilio: " + recebeAuxilio);
     }
 }
