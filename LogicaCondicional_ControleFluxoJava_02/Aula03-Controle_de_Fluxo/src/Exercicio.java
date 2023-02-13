@@ -93,5 +93,74 @@ public class Exercicio {
         }
     }
 
-    //Teste 01
+
+    //Nesse caso como só existe uma variável "mes", podemos melhorar o código usando o Switch
+    private static void ifFerias() {
+        String mes = "julho";
+        if (mes == "julho" || mes == "dezembro" || mes == "janeiro") {
+            System.out.println("Férias");
+        }
+    }
+
+    private static void ifMenor() {
+        double salarioMensal = 11893.58d;
+        double mediaSalario = 10560d;
+
+        int quantidadeDependentes = 4;
+        int mediaDependentes = 2;
+
+        if ((salarioMensal < mediaSalario) && (quantidadeDependentes >= mediaDependentes)){
+            System.out.println("Funcionário deve receber auxílio.");
+        }
+
+        boolean salarioBaixo = salarioMensal < mediaSalario;
+        boolean muitosDependentes = quantidadeDependentes >= mediaDependentes;
+
+        if ((salarioBaixo) && (muitosDependentes)){
+            System.out.println("Funcionário deve receber auxílio.");
+        }
+
+        //Código mais simplificado com menos variáveis.
+        boolean recebeAuxilio = ((salarioBaixo) && (muitosDependentes));
+
+        if (recebeAuxilio) {
+            System.out.println("Funcionário deve receber auxílio.");
+        } else {
+            System.out.println("Funcionário não deve receber auxílio.");
+        }
+    }
+
+    private static void switchSemana() {
+        String dia = "Terça";
+        switch (dia) {
+            case "Segunda":
+                System.out.println(2);
+                break;
+            case "Terça":
+                System.out.println("3");
+                break;
+            case "Quarta":
+                System.out.println("4");
+                break;
+            case "Quinta":
+                System.out.println(5);
+                break;
+            case "Sexta":
+                System.out.println("6");
+                break;
+            case "Sábado":
+                System.out.println("7");
+                break;
+            case "Domingo":
+                System.out.println("1");
+                break;
+            default:
+                System.out.println("0");
+                    System.out.println("Dia inválido");
+                break;
+        }
+
+    }
+    
+    
 }
