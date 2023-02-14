@@ -14,7 +14,7 @@ public class Exercicio {
     }
 
     private static void ifFlecha() {
-        int mes = 0;
+        int mes = 13;
         if (mes == 1) {
             System.out.println("Janeiro");
         } else {
@@ -50,7 +50,9 @@ public class Exercicio {
                                                 } else {
                                                     if (mes == 12) {
                                                         System.out.println("Dezembro");
-                                                    }
+                                                        } else {
+                                                            System.out.println("Mês indefinido.");
+                                                        }
                                                 }
                                             }
                                         }
@@ -65,7 +67,7 @@ public class Exercicio {
     }
 
     private static void ifSemFlecha() {
-        int mes = 0;
+        int mes = 6;
         if (mes == 1) {
             System.out.println("Janeiro");
         } else if (mes == 2) {
@@ -155,12 +157,44 @@ public class Exercicio {
                 System.out.println("1");
                 break;
             default:
-                System.out.println("0");
-                    System.out.println("Dia inválido");
+//                System.out.println("0");
+                System.out.println("Dia inválido");
                 break;
         }
 
     }
     
-    
+    private static void switchNumero() {
+        int numero =4;
+        switch (numero) {
+            case 1:
+            case 2:
+            case 3:
+                System.out.println("Certo");
+                break;
+            case 4:
+                System.out.println("Errado");
+                break;
+            case 5:
+                System.out.println("Talvez");
+                break;
+            default:
+                System.out.println("Valor indefinido");
+                break;
+        }
+    }
+
+    private static void switchFerias() {
+        String mes = "Dezembro";
+        switch (mes) {
+            case "dezembro":
+            case "julho":
+            case "janeiro":
+                System.out.println("Férias!");
+                break;
+            default:
+                System.out.println("Mês indefinido.");
+                break;
+        }
+    }
 }
