@@ -1,4 +1,4 @@
-package io.github.jiangdequan;
+package exercicios.metodos;
 
 public class Emprestimo {
     
