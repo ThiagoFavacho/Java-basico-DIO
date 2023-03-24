@@ -8,7 +8,7 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class ExemploSet {
+public class ExemploSet_01 {
     public static void main(String[] args) {
 //Dada uma lista com 7 notas de um aluno [7, 8.5, 9.3, 5, 7, 0, 3.6], faça:
 
